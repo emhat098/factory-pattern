@@ -106,11 +106,6 @@ src/
 ├── components/
 │   ├── toast.js          # Manages toast notifications globally.
 │   ├── toaster.js        # Global reference for triggering notifications.
-│   ├── toast-item.js     # Factory Pattern implementation for toast components.
-│   ├── success-toast.js  # Component for success notifications.
-│   ├── error-toast.js    # Component for error notifications.
-│   ├── info-toast.js     # Component for info notifications.
-│   ├── warning-toast.js  # Component for warning notifications.
 ├── hooks/
 │   ├── use-toast.js      # Hook for triggering toast notifications.
 └── util/
@@ -132,8 +127,6 @@ const NeutralToast = ({ message, style }) => (
     {message}
   </li>
 );
-
-export default NeutralToast;
 ```
 
 2. Update the Factory:
